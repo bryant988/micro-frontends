@@ -1,0 +1,35 @@
+$menu-item-color: #026ccf;
+
+.parent-app {
+  display: flex;
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.parent-menu {
+  padding: 20px;
+  box-shadow: 2px 0px 6px 0 rgba(194, 194, 194, 0.5);
+  background-color: #ffffff;
+  flex-shrink: 0;
+}
+
+.parent-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $menu-item-color;
+  color: #ffffff;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.parent-menu-item:hover {
+  background-color: lighten($menu-item-color, 20%);
+}
+
+.parent-content {
+  flex-grow: 1;
+}
